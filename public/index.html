@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWNChat</title>
+    <link href="https://fonts.cdnfonts.com/css/perfect-dos-vga-437" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-window" class="ascii-window">
+        <div class="ascii-title">┌─ PWNChat Login ─┐</div>
+        <div class="ascii-content">
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" maxlength="15">
+            <button id="login-btn">Login</button>
+        </div>
+        <div class="ascii-footer">└───────────────────┘</div>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="chat-window" class="ascii-window">
+            <div class="ascii-title">┌─ PWNChat ─┐</div>
+            <div id="chat-messages" class="ascii-content"></div>
+            <div class="ascii-footer">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-btn">-></button>
+            </div>
+        </div>
+
+        <div id="buddy-list" class="ascii-window">
+            <div class="ascii-title">┌─ Buddy List ─┐</div>
+            <div id="buddy-list-content" class="ascii-content"></div>
+            <div class="ascii-footer">└───────────────┘</div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
