@@ -1,0 +1,68 @@
+body {
+    font-family: 'Perfect DOS VGA 437', monospace;
+    background-color: #000;
+    color: #0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.ascii-window {
+    background-color: #000;
+    border: 1px solid #0F0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ascii-title {
+    margin-bottom: 10px;
+}
+
+.ascii-content {
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+.ascii-footer {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+    padding: 5px;
+    font-family: 'Perfect DOS VGA 437', monospace;
+}
+
+button {
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+    padding: 5px 10px;
+    font-family: 'Perfect DOS VGA 437', monospace;
+    cursor: pointer;
+}
+
+#chat-container {
+    display: flex;
+}
+
+#chat-window {
+    width: 600px;
+}
+
+#buddy-list {
+    width: 200px;
+}
+
+#message-input {
+    width: calc(100% - 50px);
+}
+
+#send-btn {
+    width: 40px;
+}
